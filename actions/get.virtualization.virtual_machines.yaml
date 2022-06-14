@@ -81,6 +81,14 @@ parameters:
     required: false
     type: string
     description: ""
+  contact:
+    required: false
+    type: string
+    description: ""
+  contact_role:
+    required: false
+    type: string
+    description: ""
   local_context_data:
     required: false
     type: string
@@ -302,6 +310,14 @@ parameters:
     type: string
     description: ""
   tenant__n:
+    required: false
+    type: string
+    description: ""
+  contact__n:
+    required: false
+    type: string
+    description: ""
+  contact_role__n:
     required: false
     type: string
     description: ""

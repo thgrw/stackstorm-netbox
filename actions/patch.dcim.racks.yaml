@@ -18,7 +18,7 @@ parameters:
     immutable: true
     type: boolean
   name:
-    required: true
+    required: false
     type: string
     description: "Name"
   facility_id:
@@ -26,11 +26,11 @@ parameters:
     type: string
     description: "Facility ID"
   site:
-    required: true
+    required: false
     type: integer
     description: "Site"
   location:
-    required: true
+    required: false
     type: integer
     description: "Location"
   tenant:

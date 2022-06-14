@@ -18,19 +18,19 @@ parameters:
     immutable: true
     type: boolean
   content_type:
-    required: true
+    required: false
     type: string
     description: "Content type"
   name:
-    required: true
+    required: false
     type: string
     description: "Name"
   link_text:
-    required: true
+    required: false
     type: string
     description: "Link text"
   link_url:
-    required: true
+    required: false
     type: string
     description: "Link URL"
   weight:

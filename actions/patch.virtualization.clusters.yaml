@@ -18,15 +18,15 @@ parameters:
     immutable: true
     type: boolean
   name:
-    required: true
+    required: false
     type: string
     description: "Name"
   type:
-    required: true
+    required: false
     type: integer
     description: "Type"
   group:
-    required: true
+    required: false
     type: integer
     description: "Group"
   tenant:
@@ -34,7 +34,7 @@ parameters:
     type: integer
     description: "Tenant"
   site:
-    required: true
+    required: false
     type: integer
     description: "Site"
   comments:

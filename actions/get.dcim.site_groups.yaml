@@ -61,6 +61,14 @@ parameters:
     required: false
     type: string
     description: ""
+  contact:
+    required: false
+    type: string
+    description: ""
+  contact_role:
+    required: false
+    type: string
+    description: ""
   parent_id:
     required: false
     type: string
@@ -210,6 +218,14 @@ parameters:
     type: string
     description: ""
   description__empty:
+    required: false
+    type: string
+    description: ""
+  contact__n:
+    required: false
+    type: string
+    description: ""
+  contact_role__n:
     required: false
     type: string
     description: ""

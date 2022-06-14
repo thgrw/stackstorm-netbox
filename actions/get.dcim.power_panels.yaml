@@ -49,6 +49,14 @@ parameters:
     required: false
     type: string
     description: ""
+  contact:
+    required: false
+    type: string
+    description: ""
+  contact_role:
+    required: false
+    type: string
+    description: ""
   q:
     required: false
     type: string
@@ -142,6 +150,14 @@ parameters:
     type: string
     description: ""
   name__empty:
+    required: false
+    type: string
+    description: ""
+  contact__n:
+    required: false
+    type: string
+    description: ""
+  contact_role__n:
     required: false
     type: string
     description: ""

@@ -73,6 +73,10 @@ parameters:
     required: false
     type: string
     description: "Status"
+  airflow:
+    required: false
+    type: string
+    description: "Airflow"
   primary_ip4:
     required: false
     type: integer
