@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.4
+# NetBox API version: 3.1
 description: "PUT Wireless Lans"
 enabled: true
 entry_point: run.py
@@ -29,22 +29,14 @@ parameters:
     required: false
     type: integer
     description: "Group"
-  status:
-    required: false
-    type: string
-    description: "Status"
   vlan:
     required: false
     type: integer
     description: "VLAN"
-  tenant:
-    required: false
-    type: integer
-    description: "Tenant"
   auth_type:
     required: false
     type: string
-    description: "Auth Type"
+    description: "Auth type"
   auth_cipher:
     required: false
     type: string
@@ -53,10 +45,6 @@ parameters:
     required: false
     type: string
     description: "Pre-shared key"
-  comments:
-    required: false
-    type: string
-    description: "Comments"
   tags:
     required: false
     type: array

@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.4
-description: "GET Virtual Machines"
+# NetBox API version: 3.1
+description: "Overrides ListModelMixin to allow processing ExportTemplates."
 enabled: true
 entry_point: run.py
 name: get.virtualization.virtual_machines
@@ -18,6 +18,10 @@ parameters:
     immutable: true
     type: boolean
   id:
+    required: false
+    type: string
+    description: ""
+  name:
     required: false
     type: string
     description: ""
@@ -41,15 +45,23 @@ parameters:
     required: false
     type: string
     description: ""
+  created__gte:
+    required: false
+    type: string
+    description: ""
+  created__lte:
+    required: false
+    type: string
+    description: ""
   last_updated:
     required: false
     type: string
     description: ""
-  q:
+  last_updated__gte:
     required: false
     type: string
     description: ""
-  tag:
+  last_updated__lte:
     required: false
     type: string
     description: ""
@@ -77,11 +89,11 @@ parameters:
     required: false
     type: string
     description: ""
-  contact_group:
+  local_context_data:
     required: false
     type: string
     description: ""
-  local_context_data:
+  q:
     required: false
     type: string
     description: ""
@@ -109,14 +121,6 @@ parameters:
     required: false
     type: string
     description: ""
-  device_id:
-    required: false
-    type: string
-    description: ""
-  device:
-    required: false
-    type: string
-    description: ""
   region_id:
     required: false
     type: string
@@ -138,10 +142,6 @@ parameters:
     type: string
     description: ""
   site:
-    required: false
-    type: string
-    description: ""
-  name:
     required: false
     type: string
     description: ""
@@ -169,6 +169,10 @@ parameters:
     required: false
     type: string
     description: ""
+  tag:
+    required: false
+    type: string
+    description: ""
   id__n:
     required: false
     type: string
@@ -186,6 +190,46 @@ parameters:
     type: string
     description: ""
   id__gt:
+    required: false
+    type: string
+    description: ""
+  name__n:
+    required: false
+    type: string
+    description: ""
+  name__ic:
+    required: false
+    type: string
+    description: ""
+  name__nic:
+    required: false
+    type: string
+    description: ""
+  name__iew:
+    required: false
+    type: string
+    description: ""
+  name__niew:
+    required: false
+    type: string
+    description: ""
+  name__isw:
+    required: false
+    type: string
+    description: ""
+  name__nisw:
+    required: false
+    type: string
+    description: ""
+  name__ie:
+    required: false
+    type: string
+    description: ""
+  name__nie:
+    required: false
+    type: string
+    description: ""
+  name__empty:
     required: false
     type: string
     description: ""
@@ -253,50 +297,6 @@ parameters:
     required: false
     type: string
     description: ""
-  created__n:
-    required: false
-    type: string
-    description: ""
-  created__lte:
-    required: false
-    type: string
-    description: ""
-  created__lt:
-    required: false
-    type: string
-    description: ""
-  created__gte:
-    required: false
-    type: string
-    description: ""
-  created__gt:
-    required: false
-    type: string
-    description: ""
-  last_updated__n:
-    required: false
-    type: string
-    description: ""
-  last_updated__lte:
-    required: false
-    type: string
-    description: ""
-  last_updated__lt:
-    required: false
-    type: string
-    description: ""
-  last_updated__gte:
-    required: false
-    type: string
-    description: ""
-  last_updated__gt:
-    required: false
-    type: string
-    description: ""
-  tag__n:
-    required: false
-    type: string
-    description: ""
   tenant_group_id__n:
     required: false
     type: string
@@ -318,10 +318,6 @@ parameters:
     type: string
     description: ""
   contact_role__n:
-    required: false
-    type: string
-    description: ""
-  contact_group__n:
     required: false
     type: string
     description: ""
@@ -349,14 +345,6 @@ parameters:
     required: false
     type: string
     description: ""
-  device_id__n:
-    required: false
-    type: string
-    description: ""
-  device__n:
-    required: false
-    type: string
-    description: ""
   region_id__n:
     required: false
     type: string
@@ -378,46 +366,6 @@ parameters:
     type: string
     description: ""
   site__n:
-    required: false
-    type: string
-    description: ""
-  name__n:
-    required: false
-    type: string
-    description: ""
-  name__ic:
-    required: false
-    type: string
-    description: ""
-  name__nic:
-    required: false
-    type: string
-    description: ""
-  name__iew:
-    required: false
-    type: string
-    description: ""
-  name__niew:
-    required: false
-    type: string
-    description: ""
-  name__isw:
-    required: false
-    type: string
-    description: ""
-  name__nisw:
-    required: false
-    type: string
-    description: ""
-  name__ie:
-    required: false
-    type: string
-    description: ""
-  name__nie:
-    required: false
-    type: string
-    description: ""
-  name__empty:
     required: false
     type: string
     description: ""
@@ -473,10 +421,10 @@ parameters:
     required: false
     type: string
     description: ""
-  ordering:
+  tag__n:
     required: false
     type: string
-    description: "Which field to use when ordering the results."
+    description: ""
   limit:
     required: false
     type: integer

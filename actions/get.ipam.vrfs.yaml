@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 3.4
-description: "GET Vrfs"
+# NetBox API version: 3.1
+description: "Overrides ListModelMixin to allow processing ExportTemplates."
 enabled: true
 entry_point: run.py
 name: get.ipam.vrfs
@@ -41,15 +41,23 @@ parameters:
     required: false
     type: string
     description: ""
+  created__gte:
+    required: false
+    type: string
+    description: ""
+  created__lte:
+    required: false
+    type: string
+    description: ""
   last_updated:
     required: false
     type: string
     description: ""
-  q:
+  last_updated__gte:
     required: false
     type: string
     description: ""
-  tag:
+  last_updated__lte:
     required: false
     type: string
     description: ""
@@ -69,6 +77,10 @@ parameters:
     required: false
     type: string
     description: ""
+  q:
+    required: false
+    type: string
+    description: ""
   import_target_id:
     required: false
     type: string
@@ -82,6 +94,10 @@ parameters:
     type: string
     description: ""
   export_target:
+    required: false
+    type: string
+    description: ""
+  tag:
     required: false
     type: string
     description: ""
@@ -225,50 +241,6 @@ parameters:
     required: false
     type: string
     description: ""
-  created__n:
-    required: false
-    type: string
-    description: ""
-  created__lte:
-    required: false
-    type: string
-    description: ""
-  created__lt:
-    required: false
-    type: string
-    description: ""
-  created__gte:
-    required: false
-    type: string
-    description: ""
-  created__gt:
-    required: false
-    type: string
-    description: ""
-  last_updated__n:
-    required: false
-    type: string
-    description: ""
-  last_updated__lte:
-    required: false
-    type: string
-    description: ""
-  last_updated__lt:
-    required: false
-    type: string
-    description: ""
-  last_updated__gte:
-    required: false
-    type: string
-    description: ""
-  last_updated__gt:
-    required: false
-    type: string
-    description: ""
-  tag__n:
-    required: false
-    type: string
-    description: ""
   tenant_group_id__n:
     required: false
     type: string
@@ -301,10 +273,10 @@ parameters:
     required: false
     type: string
     description: ""
-  ordering:
+  tag__n:
     required: false
     type: string
-    description: "Which field to use when ordering the results."
+    description: ""
   limit:
     required: false
     type: integer
